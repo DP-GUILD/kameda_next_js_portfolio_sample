@@ -8,16 +8,18 @@ const VideoBackground = () => {
       {/* Fallback background color */}
       <div className="absolute inset-0 bg-gray-100"></div>
       
-      {/* Static background image that simulates the cafe programming scene */}
-      <div 
-        className="absolute inset-0"
-        style={{ 
-          backgroundImage: `url('/images/cafe_programming_bg.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: 0
-        }}
-      ></div>
+      {/* Video background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+        controls={false}
+      >
+        <source src="/videos/cafe_programming.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       
       {/* Semi-transparent overlay for text readability */}
       <div className="absolute inset-0 bg-white/30 backdrop-blur-[2px]"></div>
