@@ -5,13 +5,13 @@ declare module 'next/dynamic';
 
 // React JSX declarations
 declare namespace React {
-  interface FC<P = {}> {
-    (props: P): any;
+  interface FC<P = Record<string, unknown>> {
+    (props: P): React.ReactElement;
   }
 }
 
 declare namespace JSX {
   interface IntrinsicElements {
-    [elemName: string]: any;
+    [elemName: string]: Record<string, unknown>;
   }
 }

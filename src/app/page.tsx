@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ClientWrapper from "../components/ClientWrapper";
 
 export default function Home() {
@@ -11,8 +10,8 @@ export default function Home() {
           <div className="bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-3xl mx-auto fade-in">
             <h1 className="text-4xl font-bold mb-6 text-gray-800 fade-in-up">Welcome to My Portfolio</h1>
             <p className="text-lg text-gray-700 mb-8 fade-in-up fade-in-delay-1">
-              I'm a passionate developer creating beautiful and functional web experiences.
-              Explore my work and get in touch if you'd like to collaborate on a project.
+              I&apos;m a passionate developer creating beautiful and functional web experiences.
+              Explore my work and get in touch if you&apos;d like to collaborate on a project.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 fade-in-up fade-in-delay-2">
