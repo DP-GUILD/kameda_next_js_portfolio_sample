@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
 
-const VideoBackground: React.FC = () => {
+const VideoBackground = () => {
   return (
     <div className="fixed top-0 left-0 w-full h-full overflow-hidden z-0">
       <video

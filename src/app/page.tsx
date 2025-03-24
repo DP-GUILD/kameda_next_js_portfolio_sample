@@ -1,15 +1,10 @@
 import Image from "next/image";
-import dynamic from "next/dynamic";
-
-// Dynamically import components to avoid SSR issues with video
-const VideoBackground = dynamic(() => import("../components/VideoBackground"), { ssr: false });
-const Header = dynamic(() => import("../components/Header"), { ssr: false });
+import ClientWrapper from "../components/ClientWrapper";
 
 export default function Home() {
   return (
     <>
-      <VideoBackground />
-      <Header />
+      <ClientWrapper />
       
       <div className="relative min-h-screen z-10 flex flex-col items-center justify-center">
         <main className="container mx-auto px-4 py-20 mt-16">
