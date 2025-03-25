@@ -11,17 +11,22 @@ const Header = () => {
           <div className="text-xl font-bold">Portfolio</div>
           <ul className="flex space-x-8">
             <li>
-              <Link href="#about" className="text-gray-800 hover:text-gray-600 transition-colors">
+              <Link href="/" className="text-gray-800 hover:text-gray-600 transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="text-gray-800 hover:text-gray-600 transition-colors">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#works" className="text-gray-800 hover:text-gray-600 transition-colors">
+              <Link href="/work" className="text-gray-800 hover:text-gray-600 transition-colors">
                 Works
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="text-gray-800 hover:text-gray-600 transition-colors">
+              <Link href="/contact" className="text-gray-800 hover:text-gray-600 transition-colors">
                 Contact
               </Link>
             </li>
